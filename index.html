@@ -35,7 +35,7 @@
                         <th scope="col">Minutes Away</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="table-body">
 
                 </tbody>
             </table>
@@ -67,18 +67,26 @@
                     <label for="formGroupExampleInput2">Frequency (min)</label>
                     <input type="text" class="form-control" id="frequency" placeholder="">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+
+                <!-- <button id="submit" class="btn btn-primary">Submit</button> -->
+                <div id="submit" class="btn btn-primary">Submit</div>
             </form>
 
         </div>
 
     </div>
 
-
-    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script type="javascript" src="https://github.com/Iceberg09/train_assignment.git"></script>
-    <script type="javascript" src="assets/javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <!-- <script>
+    $("#submit").on("click", function() {
+        console.log("hello");
+    });
+    </script> -->
 </body>
 
 </html>
